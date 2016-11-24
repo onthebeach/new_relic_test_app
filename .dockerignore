@@ -1,0 +1,11 @@
+.bundle
+.dockerignore
+.env
+.foreman
+.git
+.gitignore
+.ruby-version
+Dockerfile
+log
+tmp
+vendor/bundle

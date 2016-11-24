@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+ENV['RACK_ENV'] ||= 'development'
+
+$:.unshift("#{__dir__}/../lib")
+require 'new_relic_test/dependencies'
+require 'irb'
+IRB.start
