@@ -6,6 +6,6 @@
 .gitignore
 .ruby-version
 Dockerfile
-log
 tmp
 vendor/bundle
+log/*.log

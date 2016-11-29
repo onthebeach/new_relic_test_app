@@ -1,5 +1,4 @@
 require 'racklet'
-require 'newrelic_rpm'
 require 'new_relic_test/dependencies'
 
 class HelloWorld < Racklet::Application

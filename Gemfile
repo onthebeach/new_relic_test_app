@@ -1,6 +1,6 @@
 source 'http://gems.otbeach.com'
 gem 'puma'
-gem 'newrelic_rpm', '3.5.6.55'
+gem 'newrelic_rpm', '3.5.6.55', :require => :false
 
 gem 'racklet', '~> 1.2'
 

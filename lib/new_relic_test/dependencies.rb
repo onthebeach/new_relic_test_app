@@ -16,19 +16,5 @@ module NewRelicTest
       end
     end
 
-    module Monitoring
-      module_function
-
-      def configure
-        require 'newrelic_rpm'
-        NewRelic::Agent.manual_start
-        GC::Profiler.enable
-      end
-
-      def check!
-        # nothing to see here
-      end
-    end
-
   end
 end

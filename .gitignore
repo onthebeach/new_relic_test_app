@@ -4,7 +4,7 @@ config/*.yml
 config/*.cfg
 /coverage/
 /InstalledFiles
-/log
+/log/*.log
 /pkg/
 /spec/reports/
 /test/tmp/
