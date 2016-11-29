@@ -5,15 +5,11 @@ GIT_SHA:=$(shell git rev-parse --verify HEAD)
 docker-build:
 	bundle package --all
 	docker build --pull -t ${REPO}:${GIT_SHA} .
-ifeq ("${GIT_BRANCH}", "master")
 	docker tag ${REPO}:${GIT_SHA} ${REPO}:${GIT_BRANCH}
-endif
 
 docker-push:
 	docker push ${REPO}:${GIT_SHA}
-ifeq ("${GIT_BRANCH}", "master")
 	docker push ${REPO}:${GIT_BRANCH}
-endif
 
 docker-run-hello-world:
 	docker run \
